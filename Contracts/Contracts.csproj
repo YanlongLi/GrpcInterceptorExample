@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <BondOptions>--grpc</BondOptions>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bond.Core.CSharp" Version="8.0.0" />
+    <PackageReference Include="Bond.CSharp" Version="8.0.0" />
+    <PackageReference Include="Bond.Grpc.CSharp" Version="8.0.0" />
+    <PackageReference Include="Grpc.Core" Version="1.17.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BondCodegen Include="Service.bond">
+		<Options>--grpc</Options>
+	</BondCodegen>
+  </ItemGroup>
+
+</Project>

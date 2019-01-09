@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bond.Core.CSharp" Version="8.0.0" />
+    <PackageReference Include="Bond.CSharp" Version="8.0.0" />
+    <PackageReference Include="Bond.Grpc.CSharp" Version="8.0.0" />
+    <PackageReference Include="Grpc.Core" Version="1.17.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

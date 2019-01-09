@@ -1,0 +1,19 @@
+﻿import "bond/core/bond.bond"
+
+namespace GrpcInterceptorExample.Contracts;
+
+struct SampleRequest
+{
+	0: string Key;
+}
+
+struct SampleResponse
+{
+	0: string Key;
+	1: int32 Value;
+}
+
+service ExampleService
+{
+	SampleResponse GetValue (SampleRequest);
+}
